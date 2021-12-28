@@ -1,0 +1,93 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ohmi: <http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#>
+
+SELECT ?subject ?object
+	WHERE { ?subject rdfs:subClassOf ?object }
+------------------------------------------------------------
+SELECT ?subject ?predicate ?object
+WHERE { ?subject ?predicate ?object .}
+OFFSET 2
+LIMIT 10
+------------------------------------------------------------
+SELECT ?x ?y ?w
+{?x rdfs:range ?y .
+?x rdfs:domain ?w}
+------------------------------------------------------------
+SELECT ?x ?y
+{?x ohmi:has_autism ?y }
+
+------------------------------------------------------------
+SELECT ?x ?id  ?gender ?age
+{?x ohmi:has_autism "yes"^^xsd:string .
+?x ohmi:id ?id .
+?x ohmi:gender ?gender .
+?x ohmi:age ?age }
+------------------------------------------------------------
+SELECT ?x ?has
+{?x ohmi:id "p1"^^xsd:string .
+?x ohmi:has_autism ?has .}
+------------------------------------------------------------
+SELECT ?x
+	WHERE { ?x a ohmi:bactrial_microbiome }
+------------------------------------------------------------
+SELECT ?x ?name
+	WHERE { ?x a ohmi:bactrial_microbiome .
+                ?x ohmi:bactria_name ?name }
+------------------------------------------------------------
+SELECT ?x ?code
+{ ?x a ohmi:bactrial_microbiome .
+?x ohmi:bactria_code ?code
+OPTIONAL
+{FILTER( CONTAINS(?code, "OTU1") ) }}
+------------------------------------------------------------
+SELECT ?x ?code ?name
+{ ?x a ohmi:bactrial_microbiome .
+?x ohmi:bactria_code ?code .
+?x ohmi:bactria_name ?name .
+FILTER(?code = "OTU1") }
+------------------------------------------------------------
+SELECT ?x 
+{?x rdfs:subClassOf ohmi:human_microbiome}
+------------------------------------------------------------
+SELECT ?st ?id ?age
+WHERE
+{
+?st rdf:type ohmi:quality.
+?st ohmi:id ?id.
+?st ohmi:age ?age.
+FILTER(?age < 25)
+}
+------------------------------------------------------------
+SELECT ?st ?id ?gender ?age
+WHERE
+{
+?st rdf:type ohmi:quality.
+?st ohmi:id ?id.
+?st ohmi:gender ?gender.
+?st ohmi:age ?age.
+}
+ORDER BY ?age
+-------------------------------------------------------------
+SELECT *
+WHERE
+{
+?st rdf:type ohmi:quality.
+?st ohmi:age ?age.
+?st ohmi:id ?id.
+?st ohmi:gender ?gender.
+}
+ORDER BY desc (?age)
+-------------------------------------------------------------
+SELECT *
+WHERE
+{
+?st rdf:type ohmi:quality.
+?st ohmi:gender ?gender.
+?st ohmi:id ?id.
+?st ohmi:age ?age.
+FILTER(?gender ="male")
+}
+--------------------------------------------------------------
