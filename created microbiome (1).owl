@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#"
+     xml:base="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_part">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_gut_microbiome_interaction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome_interaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_participant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_participant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host_microbiome_interaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#organism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_quality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#organism"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host_role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#located_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#located_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#organism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#occurs_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#occurs_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_gut_microbiome_interaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#gut"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria_code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_autism -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_autism">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome_of_lungs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome_of_lungs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome_of_mucosal_site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome_of_mucosal_site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome_of_skin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome_of_skin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#fungal_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#gut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#gut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host"/>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host_microbiome_interaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host_microbiome_interaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host_role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host_role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#has_quality"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_gut_microbiome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_gut_microbiome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_gastrointestinal_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_gut_microbiome_interaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_gut_microbiome_interaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome_interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome_interaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome_interaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#host_microbiome_interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_cutaneous_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_cutaneous_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_gastrointestinal_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_gastrointestinal_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_lungs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_lungs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_respiratory_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_oral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_oral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_respiratory_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_respiratory_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_urogenital_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome_in_human_urogenital_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human_microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#mouse_microbiome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#mouse_microbiome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#organism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#organism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#viral_microbiome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#viral_microbiome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#microbiome"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome"/>
+        <bactria_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU1</bactria_code>
+        <bactria_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defluviitaleaceae_UCG-011</bactria_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome"/>
+        <bactria_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU2</bactria_code>
+        <bactria_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sphingopyxis_granuli</bactria_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome"/>
+        <bactria_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU3</bactria_code>
+        <bactria_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faecalicoccus</bactria_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome"/>
+        <bactria_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU4</bactria_code>
+        <bactria_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anginosus</bactria_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactria5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#bactrial_microbiome"/>
+        <bactria_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU5</bactria_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+        <has_quality rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+        <has_quality rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+        <has_quality rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+        <has_quality rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#human"/>
+        <has_quality rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#short">10</age>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</gender>
+        <has_autism rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</has_autism>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p1</id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#short">20</age>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</gender>
+        <has_autism rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</has_autism>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p2</id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#short">30</age>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</gender>
+        <has_autism rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</has_autism>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p3</id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#short">5</age>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</gender>
+        <has_autism rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</has_autism>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p4</id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/microsoft/ontologies/2021/11/untitled-ontology-15#quality"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#short">35</age>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</gender>
+        <has_autism rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</has_autism>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p5</id>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
